@@ -19,7 +19,7 @@ http.createServer(function(req,res) {
 
            res.writeHead(200, {'Content-Type': 'text/plain'});
 
-           res.end('About page');
+           res.end('About Page, very fancy at the moment.');
 
            break;
            
@@ -37,6 +37,8 @@ http.createServer(function(req,res) {
            res.writeHead(200, {'Content-Type': 'text/plain'});
 
            res.end('I do not know how to load that at the moment.');
+           
+           
 
            break;
 
