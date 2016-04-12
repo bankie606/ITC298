@@ -8,10 +8,11 @@ http.createServer(function(req,res) {
 
        case '/':
 
+
            res.writeHead(200, {'Content-Type': 'text/plain'});
 
            res.end('Home page');
-
+           
            break;
 
        case '/about':
@@ -19,6 +20,23 @@ http.createServer(function(req,res) {
            res.writeHead(200, {'Content-Type': 'text/plain'});
 
            res.end('About page');
+
+           break;
+           
+           
+        case '/cookies':
+
+           res.writeHead(200, {'Content-Type': 'text/plain'});
+
+           res.end('What are you some sort of monster?');
+
+           break;
+           
+        case 'public/home.html':
+
+           res.writeHead(200, {'Content-Type': 'text/plain'});
+
+           res.end('I do not know how to load that at the moment.');
 
            break;
 
@@ -33,3 +51,4 @@ http.createServer(function(req,res) {
    }    
 
 }).listen(process.env.PORT || 3000);
+
